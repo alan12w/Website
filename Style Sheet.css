@@ -1,20 +1,20 @@
 @font-face
 {
 	font-family:headingFont;
-	src:url(lane_nar.ttf);
+	src:url(fonts/lane_nar.ttf);
 }
 
 @font-face
 {
 	font-family:introFont;
-	src:url(alexbrush.ttf);
+	src:url(fonts/alexbrush.ttf);
 }
 
 body
 {
 	font-family:headingFont;
 	font-weight:lighter;
-	background-image:url("Background.jpg");
+	background-image:url("photos/Background.jpg");
 	background-size:100%;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
@@ -176,13 +176,17 @@ li
 	display:inline-block;
 }
 
-#photos
+.photos
 {
 	position:absolute;
-	top:200px;
 	margin-left:5%;
 	margin-bottom:20%;
 	z-index:-1;
+}
+
+.photoDesc
+{
+	font-size:1.5em;
 }
 
 .stack img 
@@ -266,6 +270,14 @@ li
 
 .stack:before { top: 4px; z-index: -10; } /* 1st element in stack (behind image) */
 .stack:after { top: 8px; z-index: -20; } /* 2nd element in stack (behind image) */
+
+#aboutHeader
+{
+	position:absolute;
+	left:40%;
+	margin-right:10%;
+	top:275px;
+}
 
 a#resumeButton:link,
 a#resumeButton:visited
