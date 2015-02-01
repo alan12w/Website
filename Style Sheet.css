@@ -180,7 +180,7 @@ li
 {
 	position:absolute;
 	margin-left:5%;
-	margin-bottom:20%;
+	margin-bottom:3%;
 	z-index:-1;
 }
 
@@ -191,6 +191,7 @@ li
 
 .stack img 
 {
+	background-color:white;
 	max-width: 100%; height: auto; vertical-align: bottom; border: 10px solid #fff; border-radius: 3px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -202,6 +203,7 @@ li
 
 .stack:before, .stack:after
 {
+	background-color:white;
 	content: ""; border-radius: 3px; width: 100%; height: 100%; position: absolute; border: 10px solid #fff; left: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -216,6 +218,7 @@ li
 
 .stack.rotated:before
 { 
+    background-color:white;
     -webkit-transform-origin: bottom left;
     -moz-transform-origin: bottom left;
     transform-origin: bottom left;
@@ -226,6 +229,7 @@ li
 
 .stack.rotated:after
 { 
+    background-color:white;
     -webkit-transform-origin: bottom left;
     -moz-transform-origin: bottom left;
     transform-origin: bottom left;
@@ -236,6 +240,7 @@ li
 
 .stack.twisted:before
 {
+    background-color:white;
     -webkit-transform: rotate(4deg);
     -moz-transform: rotate(4deg);
     transform: rotate(4deg);
@@ -243,13 +248,38 @@ li
 
 .stack.twisted:after
 {
+    background-color:white;
     -webkit-transform: rotate(-4deg);
     -moz-transform: rotate(-4deg);
     transform: rotate(-4deg);
 }
 
+.stack.twisted.last:before
+{
+    background-color:transparent;
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    transform: rotate(4deg);
+} 
+
+.stack.twisted.last:after
+{
+	background-color:transparent;
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+}
+
+.stack.twisted.last:hover:before, .stack.twisted.last:hover:after 
+{
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
 .stack.rotated-left:before
 {
+    background-color:white;
     -webkit-transform-origin: bottom left;
     -moz-transform-origin: bottom left;
     transform-origin: bottom left;
@@ -260,6 +290,7 @@ li
 
 .stack.rotated-left:after
 {
+    background-color:white;
     -webkit-transform-origin: bottom left;
     -moz-transform-origin: bottom left;
     transform-origin: bottom left;
@@ -277,6 +308,90 @@ li
 	left:40%;
 	margin-right:10%;
 	top:275px;
+}
+
+#aboutFamily
+{
+	position:absolute;
+	top:1100px;
+	margin-left:5%;
+}
+
+#aboutBass
+{
+	position:absolute;
+	top:1750px;
+	margin-right:5%;
+	left:55%;
+}
+
+#aboutPV
+{
+	position:absolute;
+	top:2400px;
+	margin-left:5%;
+}
+
+#aboutSnow
+{
+	position:absolute;
+	top:3100px;
+	left:50%;
+	margin-right:5%;
+}
+
+#aboutDance
+{
+	position:absolute;
+	top:3850px;
+	margin-left:5%;
+}
+
+#aboutTaiwan
+{
+	position:absolute;
+	top:4600px;
+	margin-left:45%;
+	margin-right:5%;
+}
+
+#aboutFriends1
+{
+	position:absolute;
+	top:5200px;
+	margin-left:5%;
+}
+
+#aboutFriends2
+{
+	position:absolute;
+	top:5750px;
+	left:55%;
+	margin-right:5%;
+}
+
+#aboutLast
+{
+	position:absolute;
+	top:6140px;
+	left:30%;
+	margin-right:30%;
+}
+
+a#aboutToContact:link,
+a#aboutToContact:visited
+{
+	-webkit-transition: all .7s ease-out;  /* Saf3.2+, Chrome */
+     -moz-transition: all 0.7s ease-out;  /* FF4+ */
+      -ms-transition: all 0.7s ease-out;  /* IE10 */
+       -o-transition: all 0.7s ease-out;  /* Opera 10.5+ */
+          transition: all 0.7s ease-out;
+}
+
+a#aboutToContact:hover,
+a#aboutToContact:active
+{
+	opacity:0;
 }
 
 a#resumeButton:link,
