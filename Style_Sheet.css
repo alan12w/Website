@@ -124,7 +124,7 @@ ul
 {
 	position:absolute;
 	top:500px;
-	margin-left:37%;
+	margin-left:27%;
 	margin-bottom:50px;
 }
 
@@ -133,6 +133,22 @@ ul
 	position:absolute;
 	top:500px;
 	margin-left:57%;
+	margin-bottom:50px;
+}
+
+#contactGH
+{
+	position:absolute;
+	top:500px;
+	margin-left:37%;
+	margin-bottom:50px;
+}
+
+#contactLI
+{
+	position:absolute;
+	top:500px;
+	margin-left:47%;
 	margin-bottom:50px;
 }
 
